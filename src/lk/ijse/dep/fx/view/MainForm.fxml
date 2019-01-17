@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootmain" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.fx.Controller.MainForm">
+   <children>
+      <Label layoutX="181.0" layoutY="31.0" text="Point Of Sale">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnMCust" layoutX="61.0" layoutY="233.0" mnemonicParsing="false" onAction="#Customer_Action" text="Mange  Customer" />
+      <Button fx:id="btnMItems" layoutX="208.0" layoutY="233.0" mnemonicParsing="false" onAction="#Items_Action" text="Mange Items" />
+      <Button fx:id="btnPOrders" layoutX="320.0" layoutY="233.0" mnemonicParsing="false" onAction="#P_Orders_Action" text="Place Orders" />
+      <Button fx:id="btnVoreders" layoutX="460.0" layoutY="233.0" mnemonicParsing="false" onAction="#V_Oreders_Action" text="View Orders" />
+      <Button fx:id="btnSettings" layoutX="501.0" layoutY="341.0" mnemonicParsing="false" onMouseClicked="#gotosetting" text="Settings" />
+   </children>
+</AnchorPane>

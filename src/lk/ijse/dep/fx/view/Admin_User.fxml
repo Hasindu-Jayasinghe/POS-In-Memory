@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.fx.Controller.Admin_User">
+   <children>
+      <Label layoutX="48.0" layoutY="29.0" text="Admin" />
+      <Label layoutX="100.0" layoutY="46.0" text="User Name" />
+      <Label layoutX="100.0" layoutY="79.0" text="Password" />
+      <TextField fx:id="txtA_Name" layoutX="175.0" layoutY="42.0" />
+      <PasswordField fx:id="txtA_psrwd" layoutX="175.0" layoutY="75.0" />
+      <Button fx:id="btnA_Update" layoutX="399.0" layoutY="75.0" mnemonicParsing="false" onAction="#A_Update_Action" text="Update" />
+      <Button fx:id="btnhome" layoutX="526.0" layoutY="4.0" mnemonicParsing="false" onAction="#btn_Home" text="Home" />
+      <TableView layoutX="18.0" layoutY="108.0" prefHeight="107.0" prefWidth="580.0">
+        <columns>
+          <TableColumn prefWidth="285.0" text="Admin User Name" />
+          <TableColumn prefWidth="281.0" text="Password" />
+        </columns>
+      </TableView>
+      <Label layoutX="48.0" layoutY="234.0" text="User" />
+      <Label layoutX="100.0" layoutY="251.0" text="User Name" />
+      <Label layoutX="100.0" layoutY="283.0" text="Password" />
+      <PasswordField fx:id="txtU_pswrd" layoutX="175.0" layoutY="279.0" />
+      <TextField fx:id="txtU_Name" layoutX="175.0" layoutY="247.0" />
+      <TableView layoutX="13.0" layoutY="310.0" prefHeight="113.0" prefWidth="587.0">
+        <columns>
+          <TableColumn prefWidth="249.0" text="User Name" />
+          <TableColumn prefWidth="335.0" text="Password" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnnew" layoutX="22.0" layoutY="279.0" mnemonicParsing="false" onAction="#U_New_Action" text="New" />
+      <Button fx:id="btncreate" layoutX="406.0" layoutY="279.0" mnemonicParsing="false" onAction="#U_Create_Action" text="Create" />
+      <Separator layoutX="-12.0" layoutY="228.0" prefHeight="0.0" prefWidth="623.0" />
+   </children>
+</AnchorPane>

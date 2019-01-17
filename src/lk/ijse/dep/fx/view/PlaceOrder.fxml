@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="433.0" prefWidth="645.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.fx.Controller.PlaceOrder">
+   <children>
+      <Label layoutX="203.0" text="Place Order">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="57.0" text="Order ID" />
+      <Label layoutX="384.0" layoutY="66.0" text="Date" />
+      <Label layoutX="34.0" layoutY="103.0" text="Customer Id" />
+      <Label layoutX="384.0" layoutY="103.0" text="Customer Name" />
+      <Label layoutX="34.0" layoutY="143.0" text="Item Code" />
+      <Label layoutX="384.0" layoutY="143.0" text="Description" />
+      <Label layoutX="34.0" layoutY="187.0" text="Qty On Hand" />
+      <Label layoutX="204.0" layoutY="187.0" text="Unit Price" />
+      <Label layoutX="389.0" layoutY="187.0" text="Qty" />
+      <Button fx:id="btnAdd" layoutX="177.0" layoutY="217.0" mnemonicParsing="false" onAction="#btnAdd_Action" text="Add" />
+      <Button fx:id="btnRemove" layoutX="372.0" layoutY="217.0" mnemonicParsing="false" onAction="#btnRemove_Action" text="Remove" />
+      <TableView fx:id="tblPlace_Order" layoutX="23.0" layoutY="242.0" prefHeight="144.0" prefWidth="599.0">
+        <columns>
+          <TableColumn fx:id="tblCode" prefWidth="75.0" text="Code" />
+          <TableColumn fx:id="tblDes" prefWidth="177.0" text="Description" />
+            <TableColumn fx:id="tblPrice" prefWidth="116.0" text="Unit Price" />
+            <TableColumn fx:id="tblqty" prefWidth="88.0" text="Qty" />
+            <TableColumn fx:id="tblTotal" prefWidth="142.0" text="Total" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnPlaceOrder" layoutX="443.0" layoutY="394.0" mnemonicParsing="false" onAction="#btnPlace_Order" text="Place Order" />
+      <Label layoutX="34.0" layoutY="398.0" text="All Total :" />
+      <TextField fx:id="txtOder_Id" layoutX="129.0" layoutY="53.0" />
+      <TextField fx:id="txtCustomer_Id" layoutX="129.0" layoutY="91.0" onKeyPressed="#searchID" />
+      <TextField fx:id="txtItem_Code" layoutX="129.0" layoutY="139.0" onKeyPressed="#search_Item" />
+      <TextField fx:id="txtDate" layoutX="482.0" layoutY="54.0" />
+      <TextField fx:id="txtCustomer_Name" layoutX="482.0" layoutY="91.0" />
+      <TextField fx:id="txtDescription" layoutX="482.0" layoutY="139.0" />
+      <TextField fx:id="txtQty" layoutX="482.0" layoutY="183.0" />
+      <TextField fx:id="txtUnit_Price" layoutX="266.0" layoutY="183.0" prefHeight="25.0" prefWidth="114.0" />
+      <TextField fx:id="txtQty_Hand" layoutX="114.0" layoutY="183.0" prefHeight="25.0" prefWidth="76.0" />
+      <Button fx:id="btnBack" layoutX="557.0" layoutY="394.0" mnemonicParsing="false" onAction="#btnBack_Action" text="Back" />
+      <TextField fx:id="txtTotal" layoutX="89.0" layoutY="394.0" />
+   </children>
+</AnchorPane>
